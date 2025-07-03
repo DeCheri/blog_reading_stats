@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ article.title }}</title>
+</head>
+<body>
+    <h1>{{ article.title }}</h1>
+    <p>作者: {{ article.author.username }}</p>
+    <p>发布时间: {{ article.created_at }}</p>
+    <p>阅读量: {{ read_count }}</p>
+    
+    <div>{{ article.content|linebreaks }}</div>
+</body>
+</html>
